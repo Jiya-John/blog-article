@@ -1,0 +1,188 @@
+/*General styling - body, header, footer*/
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+  color: #333;
+  line-height: 1.8;
+}
+
+header{
+  background-color: #e76f51;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/*for giving style to links in the article */
+.sidebar a:link,
+.article a:link{
+  color:rgb(252, 48, 106);
+}
+.sidebar a:visited,
+.article a:visited{
+  color:#ff7300;
+}
+.sidebar a:hover,
+.article a:hover{
+  color:#f606ca;
+}
+.sidebar a:active,
+.article a:active{
+  color:#d756f7;
+}
+
+/*style for the blog name*/
+.site-name a{
+  font-size: 1.8em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*flex for the main menu*/
+#main-menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+/*for giving style to links in the header */
+#main-menu a:link,
+#main-menu a:visited {
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+#main-menu a:hover {
+  color:rgb(250, 241, 70);
+}
+
+/*flex container for seperating the blog contents from the sidebar*/
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 30px;
+  gap: 40px;
+}
+
+.article{ /*flex item 1*/
+  flex-grow: 1;
+  width: 550px;
+  padding: 1em;
+}
+
+/*main heading of the blog article*/
+.post-title{
+  font-size: 2.5em;
+  color: #2b3d45;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*images within the article*/
+img{
+  width: 270px;
+  padding: 20px 20px;
+}
+
+.sidebar{ /* flex item 2*/
+  order: 2;
+  width: 360px;
+  background-color: #f0fd8e;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+/*headings in the sidebar*/
+.sidebar h3{
+  margin-top: 1.5em;
+}
+
+/*subscription form inside the sidebar- input and button*/
+#subscribe-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+#subscribe-form input{
+  padding: 10px;
+  border: 1px solid #c1bbbb;
+  border-radius: 5px;
+}
+
+#subscribe-form button{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fcda30;
+  color:  #273439;
+  border: 1px solid #cfc839;
+  border-radius: 5px;
+  font-size: medium;
+  display:inline-block;
+  text-align:center;
+}
+
+/*comment section heading, form, label, button*/
+.comment-section {
+  background-color: #f0be9f;
+  padding: 0.5em 4em;
+  margin: 0 12em;
+  border-radius: 0.5em;
+}
+
+.comment-section h2 {
+  margin: 0.8em 0;
+  font-size: 1.8em;
+  color: #3c3c3c;
+}
+
+/*form styling*/
+#comment-section-form{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px; 
+}
+
+.comment-section label {
+  font-weight: bold;
+  color: #3c3c3c;
+}
+
+.comment-section input,
+.comment-section textarea {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ab7373;
+  border-radius: 5px;
+}
+
+.comment-section button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #c0634c;
+  color: white;
+  border: 1px solid #834848;
+  border-radius: 5px;
+  font-size: medium;
+  display:inline-block;
+  text-align:center;
+}
+
+
